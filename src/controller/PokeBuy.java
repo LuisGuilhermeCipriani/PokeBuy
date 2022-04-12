@@ -5,6 +5,7 @@
  */
 package controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import model.Pokemon;
 
@@ -13,6 +14,21 @@ import model.Pokemon;
  * @author cipri
  */
 public class PokeBuy {
-    private List<Pokemon> pokemonArmazenados;
-   
+    private List<Pokemon> pokemonArmazenados;   
+    
+    public void comprarPokemon(Pokemon pokemon){
+        pokemonArmazenados = new ArrayList<>();
+        
+        pokemonArmazenados.add(pokemon);
+    }
+    
+    public int valorTotal(){
+        int quantidade = 0;
+        
+        for(Pokemon p : pokemonArmazenados){
+            quantidade += p.getQuantidade();
+        }
+        
+        return quantidade;
+    }
 }

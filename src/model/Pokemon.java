@@ -14,16 +14,18 @@ public class Pokemon {
     private String tipo = "";
     private Float preco;
     private String som = "";
+    private Integer quantidade;
     
     Pokemon(){
         
     };
     
-    Pokemon(String nome, String tipo, Float preco, String som){
+    Pokemon(String nome, String tipo, Float preco, String som, Integer quantidade){
         this.nome = nome;
         this.tipo = tipo;
         this.preco = preco;
         this.som = som;
+        this.quantidade = quantidade;
     };
 
     public String getNome() {
@@ -57,6 +59,13 @@ public class Pokemon {
     public void setSom(String som) {
         this.som = som;
     }
-    
-    
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+       
 }
