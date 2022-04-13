@@ -20,7 +20,7 @@ public class Pokemon {
         
     };
     
-    Pokemon(String nome, String tipo, Float preco, String som, Integer quantidade){
+    public Pokemon(String nome, String tipo, Float preco, String som, Integer quantidade){
         this.nome = nome;
         this.tipo = tipo;
         this.preco = preco;
@@ -66,6 +66,5 @@ public class Pokemon {
 
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
-    }
-       
+    }       
 }
